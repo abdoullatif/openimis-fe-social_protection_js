@@ -5,6 +5,7 @@ import React from 'react';
 import { Tune } from '@material-ui/icons';
 import { FormattedMessage } from '@openimis/fe-core';
 import messages_en from './translations/en.json';
+import messages_fr from './translations/fr.json';
 import reducer from './reducer';
 import BenefitPlanMainMenu from './menus/BenefitPlanMainMenu';
 import BenefitPlansPage from './pages/BenefitPlansPage';
@@ -71,7 +72,10 @@ const ROUTE_BENEFIT_PLAN = 'benefitPlans/benefitPlan';
 const ROUTE_BENEFIT_PACKAGE = 'benefitPackage';
 
 const DEFAULT_CONFIG = {
-  translations: [{ key: 'en', messages: messages_en }],
+  translations: [
+    { key: 'en', messages: messages_en },
+    { key: 'fr', messages: messages_fr }
+  ],
   reducers: [{ key: 'socialProtection', reducer }],
   'core.MainMenu': [{ name: 'BenefitPlanMainMenu', component: BenefitPlanMainMenu }],
   'core.Router': [
