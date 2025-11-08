@@ -31,6 +31,7 @@ function BenefitPlanMainMenu(props) {
     <MainMenuContribution
       {...props}
       header={formatMessage(props.intl, 'socialProtection', 'mainMenuSocialProtection')}
+      icon={<Tune />}
       entries={entries}
       menuId="BenefitPlanMainMenu"
     />
